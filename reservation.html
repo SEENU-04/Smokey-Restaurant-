@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Gourmet Bites</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<style>
+
+
+</style>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Smokey Bites</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about us.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-image">
+            <h1>Make a Reservation</h1>
+        </div>
+    </header>
+
+    <section class="reservation-container">
+        <div class="reservation-content">
+            <!-- Left side image -->
+            <div class="reservation-image">
+                <img src="https://cdn.geekwire.com/wp-content/uploads/2016/10/bigstock-Reserved-sign-on-a-restaurant-129871229.jpg" alt="Restaurant Image"> <!-- Replace with your image path -->
+            </div>
+            
+            <!-- Right side form -->
+            <div class="reservation-form">
+                <form action="/submit-reservation" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+
+                    <button type="submit">Book Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Gourmet Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Smokey Bites</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .navbar .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            color: #e8dbdb;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 20px;
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            color: #f6eeee;
+            font-size: 1.1rem;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-item .nav-link:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 450px;
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            text-align: left;
+            color: #555;
+        }
+
+        input {
+            padding: 12px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: #333;
+            box-shadow: 0 0 8px rgba(51, 51, 51, 0.2);
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .register-btn {
+            background-color: #ff6f61;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .register-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 111, 97, 0.3);
+        }
+
+        .form-footer {
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+
+        .form-footer a {
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .form-footer a:hover {
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 30px;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Smokey Bites</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <h1>Login</h1>
+        <form action="/login" method="POST">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <div class="form-footer">
+            <p>Don't have an account? <a href="/register" class="register-btn">Register here</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Smokey Bites. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

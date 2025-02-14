@@ -1,0 +1,137 @@
+ /* General Styles */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url(https://images.squarespace-cdn.com/content/v1/5f329f79c232cb4ecb69ba9a/1612605371100-L8OPRP7JIBXK16K0T807/food+background+for+restaurant+menu-5.jpg);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #222;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f8b400;
+    text-transform: uppercase;
+}
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.navbar-nav .nav-item {
+    margin: 0 15px;
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s, background 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #222;
+    background: #f8b400;
+    border-radius: 5px;
+}
+
+/* Header */
+header {
+    background-color: #f8b400;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li {
+    margin: 0 15px;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: opacity 0.3s;
+}
+header nav ul li a:hover {
+    opacity: 0.7;
+}
+
+/* Menu Section */
+#menu {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background:transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.menu-category {
+    margin-bottom: 30px;
+    padding: 20px;
+    background:rgb(228, 210, 210);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.menu-category h3 {
+    color: #f8b400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+.menu-category ul li {
+    font-size: 1.8rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+}
+.menu-category ul li:last-child {
+    border-bottom: none;
+}
+.menu-category .item {
+    display: flex;
+    align-items: center;
+}
+.menu-category ul li img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.menu-category ul li span.price {
+    font-weight: bold;
+    color: #f8b400;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    margin-top: 40px;
+}

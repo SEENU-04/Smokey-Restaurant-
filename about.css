@@ -1,0 +1,155 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 60px; /* To prevent content from being hidden under fixed navbar */
+}
+
+/* Header styles */
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #212529;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    color: #e6972f;
+    font-size: 1.5em;
+    text-transform:uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 15px; /* Adds margin to the left */
+}
+
+.navbar-toggler {
+    border-color: #f8f9fa;
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Keeps the navbar items on the right */
+    margin-right: 15px; /* Adds margin to space out the nav items from the edge */
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #f8f9fa;
+    font-size: 1.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 0;
+}
+
+.nav-link:hover {
+    color: #ffc107;
+}
+
+/* Ensure the navbar brand is on the left and navbar items are on the right */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+
+/* Section styles */
+section {
+    padding: 50px 20px;
+    margin: 20px;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* About section image styling */
+.about-image {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+}
